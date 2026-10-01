@@ -1,0 +1,12 @@
+"SPOT": "Spot é um Labrador muito dócil e amigável de 08 anos. Adora correr no parque, é super paciente com crianças e está procurando uma família amorosa para curtir a terceira idade.",
+"LUNA": "Luna é uma gata da raça Bengal, com 11 meses de idade. Extremamente curiosa, cheia de energia e adora brincar com bolinhas de corda.",
+"GEORGIA": "Georgia é uma Beagle de 4 anos muito charmosa. Adora um bom passeio ao ar livre e é uma excelente companheira para quem gosta de caminhar.",
+"MINGAU": "Mingau é um gato SRD de 2 anos, muito calmo, carinhoso e que adora tirar longos cochilos no sofá de casa.",
+"Peppa": "Peppa é uma porca de 3 anos, muito comilona, adora correr atrás das pessoas para brincar e ama uma poça de lama",
+"Scooby": "Scooby é um salsicha de 2 anos, muito encantador, adora correr e ganhar carinho de todos",
+"George": "George é um  macaco de 1 ano, gosta de escalar tudo, ama ficar agarrado no pescoço de todos e comer muitas frutas",
+"Pascal": "Pascal é um lagarto de 5 anos, adora se esconder e quando é encontrado começa a correr bem rápido atrás de todos",
+"Telles": "Telles é um bulldog de 3 anos, adora dormir, comer muita ração e adora passear por todos os lugares", 
+"Linguiça": "Linguiça é um lemure de 2 anos, encantadora, adora carinho e ama se esconder", 
+"Kat": "Kat é uma gata de 2 anos, que adora dormir e ficar deitada no colo recebendo carinho", 
+"Neve": "Neve é uma labradora de 3 anos, é muito carinhosa e adora ter alguém para brincar e passear".

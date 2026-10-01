@@ -3,30 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doa Petz - Detalhes do Pet</title>
+    <title>Doa Petz - Meu Perfil</title>
     <!-- FontAwesome para os ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body class="pagina-detalhes">
 
-
-    <!-- Cabeçalho Logado -->
+    <!-- Cabeçalho Logado Padronizado -->
     <header class="cabecalho-detalhes">
         <nav class="menu">
             <a href="encontrar-pets.html">
                 <img class="logomarca" src="./Assets/doapetz-branco.png" alt="Logo DoaPetz">
             </a>
-           
+            
             <div class="perfil-cabecalho-detalhes">
                 <div class="info-usuario">
                     <img src="./Assets/homem-cachorro.jpeg" alt="Foto do Usuário" class="foto-perfil">
                     <div class="dados-usuario">
-                        <span class="nome-usuario">The Rock</span>
+                        <span class="nome-usuario">iza linda</span>
                         <span class="localizacao"><i class="fa-solid fa-location-dot"></i> Brooklin, São Paulo</span>
                     </div>
                 </div>
-
 
                 <div class="acoes-direita">
                     <a href="encontrar-pets.html" class="icone-cabecalho" title="Voltar para Encontrar Pets">
@@ -44,34 +42,35 @@
         </nav>
     </header>
 
-
+    <!-- Corpo Principal da Página de Perfil -->
     <main class="corpo-detalhe-pet">
         <div class="card-detalhe-container">
-           
-            <!-- Adicionamos um ID (imagem-pet) para o JavaScript conseguir trocar a foto -->
-            <div class="detalhe-imagem">
-                <img src="./Assets/luna2.webp" alt="Foto do Pet" id="imagem-pet">
+            
+            <!-- Foto de Perfil Interativa -->
+            <div class="detalhe-imagem" style="text-align: center;">
+                <img src="./Assets/homem-cachorro.jpeg" alt="Foto de The Rock" id="foto-perfil-usuario" style="cursor: pointer;" title="Clique para trocar a foto">
+                <p style="font-size: 13px; color: #666; margin-top: 10px;">(Clique na foto para alterar)</p>
+                
+                <!-- Input de arquivo escondido -->
+                <input type="file" id="input-nova-foto" accept="image/*" style="display: none;">
             </div>
 
-
+            <!-- Informações do Usuário -->
             <div class="detalhe-info">
-                <!-- Adicionamos um ID (nome-pet) para o JavaScript trocar o título -->
-                <h1 class="nome-pet-titulo" id="nome-pet">Luna</h1>
-               
-                <!-- Adicionamos um ID (descricao-pet) para o JavaScript trocar o texto -->
-                <p class="descricao-pet-texto" id="descricao-pet">
-                    Luna é uma gata encantadora, com pelo preto e branco, olhos verdes hipnotizantes e uma personalidade cativante. Ela é afetuosa, brincalhona e uma caçadora habilidosa.
+                <h1 class="nome-pet-titulo">Izabelly</h1>
+                <p class="descricao-pet-texto">
+                    <i class="fa-solid fa-location-dot" style="color: #ff950d;"></i> Scs, São Paulo<br>
+                    <strong>E-mail:</strong> izabellyalmeida@gmail.com<br>
+                    <strong>Sobre mim:</strong> Apaixonado por animais, em busca de um novo companheiro de quatro patas para aventuras e muita diversão!
                 </p>
-               
                 <div class="botoes-acao-pet">
-                    <button class="btn-ver-mais" id="btn-ver-mais">Ver Mais</button>
-                    <button class="btn-adotar" id="btn-adotar">Adotar</button>
+                    <button class="btn-adotar" id="btn-editar-perfil">Editar Perfil</button>
                 </div>
             </div>
         </div>
     </main>
 
-
+    <!-- Rodapé Padronizado -->
     <footer class="rodape">
         <div class="conteudo-rodape">
             <img class="logomarca" src="./Assets/doapetz-branco.png" alt="Logo DoaPetz">
@@ -83,4 +82,23 @@
             </div>
         </div>
     </footer>
+    <script>
+   document.addEventListener("DOMContentLoaded", function() {
+    const imagemPerfil = document.getElementById("foto-perfil-usuario") 
+    const inputNovafoto  = document.getElementById("input-nova-foto")
+    const fotosCabecalho = document.querySelectorAll(".foto-perfil")
 
+    // carrega a foto salva na memeoria ao abrir a pagina 
+    const fotoSalva = localStorage.getItem("fotoPerfilUsuario")
+    if (fotoSalva){
+        if (imagemPerfil) imagemPerfil.src = fotoSalva
+        fotosCabecalho.forEach(function(foto) {
+            foto.src = fotoSalva
+        })
+     }
+   })
+   
+    </script>
+    </body>
+    </html>
+     
